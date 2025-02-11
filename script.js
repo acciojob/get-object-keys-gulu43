@@ -1,16 +1,13 @@
-// let student ={
-//     "name":'Gulu'
-// };
-// // console.log(student);
-// function getKeys(obj_name) {
-//     return Object.keys(obj_name);
-// }
-
-let student = {
-  name: "Gulu",
-  age: 21,
-  getKeys: function() {
-    return Object.keys(this);
-  }
+// Create the student object
+const student = {
+  name: "John",
 };
-console.log(myObj.getKeys()); 
+
+Object.prototype.getKeys = function(){
+	return Object.keys(obj);
+}
+  
+
+
+// Testing the function
+// console.log(getKeys(student)); // Output: ["name"]
