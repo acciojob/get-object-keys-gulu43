@@ -1,13 +1,12 @@
-// Create the student object
+
 const student = {
   name: "John",
 };
 
-Object.prototype.getKeys = function(){
-	return Object.keys(obj);
-}
-  
 
+Object.prototype.getKeys = function () {
+  return Object.keys(this);
+};
 
-// Testing the function
-// console.log(getKeys(student)); // Output: ["name"]
+// Do not change code below this line
+window.student = student;
